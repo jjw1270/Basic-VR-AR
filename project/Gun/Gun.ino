@@ -1,4 +1,4 @@
-int motorSpeed = 200;
+
 
 void setup() {
   pinMode(10, OUTPUT);
@@ -11,16 +11,13 @@ void setup() {
 void loop() {
   if(digitalRead(3) == LOW){
     Serial.println("BT ON");
-    analogWrite(10, motorSpeed);
-    analogWrite(11, 0);
+    digitalWrite(10, LOW);
+    digitalWrite(11, HIGH);
     delay(500);
-    analogWrite(10, 0);
-    analogWrite(11, 0);
-    delay(200);
   }
   else{
-    analogWrite(10, 0);
-    analogWrite(11, 0);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
   }
 
 }
