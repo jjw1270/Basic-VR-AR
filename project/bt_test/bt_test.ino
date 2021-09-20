@@ -20,7 +20,7 @@ void loop() {
   if (Serial.available()){
     if(trig == HIGH){
       BTSerial.println(1);
-      delay(500);
+      delay(400);
     }
   }
 }
