@@ -10,16 +10,16 @@ void setup() {
 
 void loop() {
   int trig = digitalRead(trigPin);
-  String txt = Serial.readString();
-  if (trig == HIGH) {
-    Serial.write(9);
-  }
-  if(txt == "5"){
-    digitalWrite(LED, HIGH);
-    delay(300);
+  String RV = Serial.readString();
+  if(RV != "R"){
+    if (trig == HIGH) {
+      Serial.println("F");
+      //솔레노이드 액추에이터
+      delay(500);
+    }
+  }else if(RV == "R"){
+    digitalWrite(LED,HIGH);
+    delay(3000);
     digitalWrite(LED, LOW);
-    delay(100);
   }
-  //if(Serial.available()){
-  //}
 }
