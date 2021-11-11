@@ -2,15 +2,15 @@
 
 
 
-const int trigPin = 4;     //btn
+const int trigPin = 5;     //btn
 const int LED = 5;
-//const int BulletPin = 6;
+const int ReloadPin = 6;
 
 void setup() {
   Serial.begin(9600);
   pinMode(trigPin, INPUT_PULLUP);
   pinMode(LED, OUTPUT);
-  //pinMode(BulletPin, INPUT_PULLUP);
+  pinMode(ReloadPin, INPUT_PULLUP);
 }
 
 
