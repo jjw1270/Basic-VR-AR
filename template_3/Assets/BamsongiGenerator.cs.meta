@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 6cfc326151dc9564b90674a0e85b1a50
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bamsongi_prefab: {fileID: 3821668028855678771, guid: d8b50007134114541949ff2e37cdb9d5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
